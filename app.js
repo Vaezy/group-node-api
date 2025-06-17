@@ -1,4 +1,4 @@
-// TP 1
+// ---------- TP 1 ----------
 
 // const users = [
 //   { id: 1, name: "John Doe" },
@@ -21,7 +21,7 @@
 // });
 
 
-// TP 2 
+// ---------- TP 2 ----------
 
 const express = require("express");
 const app = express();
@@ -31,8 +31,10 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get('status', (req, res) => {
+app.get('/status', (req, res) => {
   res.json({ status: 'API is running' });
 });
 
 module.exports = app;
+
+
